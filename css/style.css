@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+:root {
+    --color1: #451e9e ;
+    --color2: #34178d ;
+    --color3: #230f7b;
+    --color4: #11086a;
+    --color5: #000058;
+    --color1-hover: #7b4fe19e; 
+    --button-red: rgb(208, 40, 40); 
+    --button-green: rgb(24, 147, 24);
+}
+
+
+#header {
+    background-color: var(--color3);
+    padding: 1rem 0;
+    text-align: center;
+    color: #FFF;
+}
+
+
+#main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    padding: 50px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+.add-client {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color2);
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.add-client:hover {
+    transform: scale(1.05);
+}
+
+
+.container {
+    margin-top: 1.2rem;
+    width: 100%;
+}
+
+
+.container thead {
+    background-color: var(--color1);
+    width: 100%;
+}
+
+.container thead tr th {
+    padding: 5px;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.container tbody tr{
+    margin-top: .5rem;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    font-size: .9rem;
+}
+
+.container tbody tr td {
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.container tbody tr:hover {
+    background-color: var(--color1-hover);
+    cursor: default;
+    color: #FFF;
+}
+
+.button {
+    padding: .3rem .7rem;
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+
+.button.green {
+    background-color: var(--button-green);
+}
+
+.button.red {
+    background-color: var(--button-red);
+}
+
+.button:hover {
+    box-shadow: inset 200px 0 0 #00000044;
+}

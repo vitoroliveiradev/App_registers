@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Clientes.</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Modal-CSS-->
+    <link rel="stylesheet" href="css/modal.css">
+    <!--Javascript-->
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+      <header id="header">
+          <h1>Register Customers</h1>
+      </header>
+
+      <main id="main-container">
+          <button class="add-client">Add Client</button>
+          <table class="container">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>E-mail</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+      </main>
+
+      <div class="modal-container">
+          <div class="modal-wrapper">
+              <button class="button-close">X</button>
+              <section class="title">
+                  <h2>New Client</h2>
+              </section>
+              <form id="form" class="container-input">
+                <div class="input">
+                    <input type="text" data-index="new" name="name" id="name" placeholder="Client name" required autocomplete="off">
+                </div>
+                <div class="input">
+                    <input type="email" name="email" id="email" placeholder="Client e-mail" required autocomplete="off">
+                </div>
+                <div class="input">
+                    <input type="text" name="phone" id="phone" placeholder="Client phone" required autocomplete="off">
+                </div>
+                <div class="input">
+                    <input type="text" name="city" id="city" placeholder="Client city" required autocomplete="off">
+                </div>
+            </form>
+              <section class="container-button">
+                  <button id="save" class="save">Save</button>
+                  <button id="cancel">Cancel</button>
+              </section>
+          </div>
+      </div>
+  </body>
+</html>
